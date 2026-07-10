@@ -1299,3 +1299,55 @@
     padding: 6px 8px;
   }
 }
+
+/* ---------------------------------------------------------
+   Admin Command Queue
+--------------------------------------------------------- */
+
+.tableBadge.pending {
+  background: var(--amber-soft);
+  color: #9a6700;
+}
+
+.tableBadge.completed {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.tableBadge.failed {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.commandButtonGroup {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.miniButton {
+  border: 1px solid #bbf7d0;
+  background: var(--green-soft);
+  color: var(--green);
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.miniButton.danger {
+  border-color: #fecaca;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.miniButton:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.mutedText {
+  color: var(--text-soft);
+  font-size: 12px;
+}

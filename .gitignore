@@ -1,0 +1,30 @@
+# Node / React
+node_modules/
+dashboard/node_modules/
+
+# Vite build output
+dashboard/dist/
+
+# Firebase local cache
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Environment files
+.env
+.env.local
+.env.production
+dashboard/.env
+dashboard/.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
