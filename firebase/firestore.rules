@@ -1,0 +1,19 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Development rules for Smart Waste Sorter.
+    // OPEN FOR DEVELOPMENT ONLY.
+    // Later we will lock this using Firebase Authentication and role-based access.
+    match /systems/{systemId} {
+      allow read, write: if true;
+
+      // Allow all nested system documents during development:
+      // bins, events, alerts, admin, admin_logs, calibration, device_health, etc.
+      match /{document=**} {
+        allow read, write: if true;
+      }
+    }
+  }
+}
