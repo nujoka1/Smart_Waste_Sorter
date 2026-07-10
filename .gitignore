@@ -28,3 +28,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Local dashboard environment
+dashboard/.env.local
+dashboard/.env
+
+# Local ESP32 bridge secrets/config
+local_bridge/.env
+
+# Local ESP32 bridge secrets/config
+local_bridge/.env
